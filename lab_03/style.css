@@ -1,0 +1,95 @@
+@import url('servermes.css');
+
+.table td, .table th{
+    border: 1px solid #6395ff;
+    padding: 5px 10px;
+}
+.table{
+    border-collapse: collapse;
+    width: 500px;
+}
+.table thead{
+    background-color: #dae1f8;
+}
+.table tfoot{
+    background-color: #5776b1;
+    color: white;
+    text-align: end;
+}
+
+
+
+.timetable .subject{
+    width: 340px;
+}
+
+.timetable .boredr-p{
+    border-left: 2px dashed;
+}
+
+.timetable .dasged-up{
+    border-top: 2px dotted;
+    border-left: 4px solid;
+    border-right: 4px solid;
+    background-color: #D9E1F2;
+    font-weight: bold;
+}
+
+.timetable .arround-solid{
+    border-left: 4px solid;
+    border-right: 4px solid;
+    background-color: #D9E1F2;
+    font-weight: bold;
+}
+.timetable td, .timetable th{
+    border: 1px solid;
+    padding: 10px 15px;
+    word-wrap: break-word;
+    width: 10px;
+}
+.timetable{
+    border-collapse: collapse;
+    border: 5px solid;
+}
+.timetable caption{
+    font-size: xx-large;
+}
+
+.timetable thead, .timetable tbody{
+    border: 4px solid;
+    text-align: center;
+}
+
+.timetable .blue-back{
+    background-color: #D9E1F2;
+    font-weight: bold;
+}
+
+.timetable thead{
+    height: 70px;
+    background-color: #E2EFDA;
+}
+
+.timetable thead td, .timetable thead th{
+    border: 4px solid;
+}
+
+.timetable b{
+    font-size: large;
+}
+
+.mainrow{
+    width: 20px;
+    background-color: #D9E1F2;
+    font-weight: bold;
+}
+
+.timetable .popuchenyy{
+    vertical-align: bottom;
+    font-size: 22px;
+}
+
+.timetable .left-align{
+    text-align: left;
+    font-size: 22px;
+}
