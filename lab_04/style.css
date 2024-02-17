@@ -1,0 +1,60 @@
+.gallery-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.big-container {
+    justify-content: center; /* Вирівнювання по горизонталі */
+    align-items: center;
+    width: 630px;
+    height: 430px;
+    overflow: hidden;
+    margin: 20px;
+}
+.big-container img{
+    width: 600px;
+    height: auto;
+    border-radius: 15px;
+    margin: 12px 0 12px 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.904);
+}
+
+.nav-container img{
+    width: 100px;
+    height: auto;
+    border-radius: 15px;
+    margin: 0 5px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.904);
+}
+
+
+.f-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-frame{
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.904);
+    width: 640px;
+    height: 640px;
+    overflow: hidden;
+}
+
+.f-back-btn{
+    margin: 25px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.904);
+    text-decoration: none;
+    color: aliceblue;
+    background-color: darkslategray;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+}
+
+.f-back-btn:hover{
+    background-color: darkcyan;
+}
