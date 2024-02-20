@@ -1,0 +1,125 @@
+.container-frame {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-for-frame img{
+    width: 240px;
+    height: 240px;
+    margin: 0;
+    padding: 0;
+}
+
+.img-for-frame{
+    width: 240px;
+    height: 240px;
+    padding: 0;
+    border: 15px solid #EBEDEF;
+    position: absolute;
+}
+
+.frame-top{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border: 15px solid #FBB1BC;
+    transform: rotate(45deg);
+}
+.frame-down{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border: 15px solid rgba(240, 248, 255, 0);
+    border-left: 15px solid #FBB1BC;
+    border-right: 15px solid #FBB1BC;
+    transform: rotate(45deg);
+}
+
+.city-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.city-element{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin: 0 20px;
+    padding: 0;
+}
+.city-element img{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+.city-description{
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    top: 100px;
+    height: 100px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    
+}
+.city-description section{
+    margin: 10px 0;
+}
+
+
+.city-description p{
+    padding: 0 8px;
+    font-size: 1.5ch;
+}
+
+.city-description .subt{
+    margin-top: 5px;
+    color: gray;
+}
+.city-description .hed{
+    font-weight: bold;
+}
+
+.city-description .desc-sub{
+    display: none;
+}
+
+
+.city-description:hover{
+    transition: 0.5s;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    height: 200px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+
+.city-description:hover p{
+    color:  white;
+    padding: 0;
+}
+
+.city-description:hover .desc-sub{
+    transition: 0.5s;
+    display: block;
+}
+
+.city-description:hover .hed{
+    font-size: 1.8ch;
+    background-color: #FFA500;
+    padding: 5px 8px;
+}
+
+.city-description:hover .subt{
+    transition: 0.5s;
+    font-size: 1.8ch;
+}
