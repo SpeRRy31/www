@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.registration-form {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #9c9c9c;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.432);
+    background-color: #EFEDED;
+}
+
+.reg-form{
+    margin: 30px;
+}
+
+.reg-grid{
+    display: grid;
+    grid-template-columns: 48px 1fr 1fr;
+    grid-template-rows: repeat(3, 48px);
+    gap: 25px;
+}
+
+#login{
+    grid-column: 2/span 2;
+}
+#email{
+    grid-column: 2/span 2;
+}
+#password{
+    grid-column: 2/span 1;
+}
+#confirm-password{
+    grid-column: 3/span 1;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    height: 48px;
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+.data-form{
+    margin: 30px;
+}
+
+.data-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 48px);
+    row-gap: 25px;
+}
+
+.input-form{
+    display: flex;
+    gap: 3%;
+}
+
+.che-form{
+    margin: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+input[type="date"] {
+    border: none;
+    background-color: #9c9c9c00;
+    border-bottom: 2px solid #9B9B9B;
+    margin: 5px 15px;
+    width: 100%;
+}
+
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+button {
+    width: 120px;
+    padding: 10px 40px;
+    margin: 5px 25px 0;
+    background-color: #028B94;
+    color: #fff;
+    border: 1px solid #07464A;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #07464A;
+}
+
+
+@media (max-width: 900px){
+    .input-form{
+        flex-direction: column;
+    }
+    .registration-form{
+        width: 500px;
+    }
+}
+
+@media (max-width: 600px){
+    .reg-grid{
+        grid-template-columns: 36px 1fr;
+        grid-template-rows: repeat(4, 36px);
+        gap: 5px;
+    }
+    #confirm-password{
+        grid-column: 2/span 1;
+    }
+
+    .registration-form{
+        width: 300px;
+    }
+
+    .data-grid{
+        grid-template-columns: 1fr;
+        row-gap: 5px;
+    }
+    img{
+        width: 36px;
+        height: 36px;
+    }
+}

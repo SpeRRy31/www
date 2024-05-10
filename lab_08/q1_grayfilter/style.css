@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #28292A;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.page-header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #222;
+}
+
+.page-title{
+    width: 98%;
+    background-color: #333;
+    border-bottom: 1px solid #666;
+    color: #ccc;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.page-nav{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+
+}
+
+.nav-btn{
+    text-align: center;
+    width: 95%;
+    max-height: 25px; 
+    overflow: hidden; 
+    background-color: #ccc;
+    margin: 2px;
+    border-radius: 7px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000;
+}
+
+.main-page{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+}
+
+
+.page-section{
+    order: -1;
+    flex: 3;
+    padding: 5px 15px;
+}
+
+.chapter-header{
+    font-size: 26px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+p{
+    margin: 10px 0;
+}
+
+.page-aside{
+    flex: 1;
+    padding: 5px 15px;
+    background-color: #fff;
+}
+
+.page-footer{
+    background-color: #ccc;
+    color: #222;
+    padding: 6px 15px;
+    margin-top: auto;
+}
+
+@media screen and (min-width: 400px){
+    .page-nav{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main-page {
+        flex-direction: row;
+    }
+
+    .page-aside {
+        flex: 1;
+        width: 30%;
+        height: 100%;
+        position: fixed;
+        top: auto;
+    }
+
+    .page-section {
+        margin-left: 30%;
+        flex: 3;
+        order: 1;
+    }
+
+    .page-footer{
+        position: relative;
+    }
+}
